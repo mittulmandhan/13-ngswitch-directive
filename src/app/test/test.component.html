@@ -1,0 +1,10 @@
+<!-- The ngSwitch directive is similar to switch statement in any other language -->
+<!-- only difference is that we render HTML instead of some logic -->
+<!-- Syntax is as follows -->
+<!-- following use of switch directive will render the HTML element based on the color specified in the property -->
+<div [ngSwitch]="color">
+    <p *ngSwitchCase="'red'">you picked red color</p>
+    <p *ngSwitchCase="'blue'">you picked blue color</p>
+    <p *ngSwitchCase="'green'">you picked green color</p>
+    <p *ngSwitchDefault>you picked a color which is not in the list</p>
+</div>
